@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Form </title>
+<!-- production version, optimized for size and speed -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<link rel ="stylesheet" type="text/css" href="css/folhadeestilo.css">
+    </head>
+    <body>
+        <Div class="Container">
+        <div id="logo">
+            
+         <img src="img/Logo.png" alt="escudo">
+        
+    </div>
+        <div class="form">
+            
+            <form
+            id="app"
+            @submit="checkForm"
+            action="https://vuejs.org/"
+            method="post">
+            <p v-if="errors.length">
+              <b>Por favor, corrija o(s) seguinte(s) erro(s):</b>
+              <ul>
+                <li v-for="error in errors">{{ error }}</li>
+              </ul>
+            </p>
+          
+            <p>
+              <label for="name">Nome</label>
+              <input
+                id="name"
+                v-model="name"
+                type="text"
+                name="name">
+            </p>
+          
+            <p>
+              <label for="age">Idade</label>
+              <input
+                id="age"
+                v-model="age"
+                type="number"
+                name="age"
+                min="0">
+            </p>
+          
+            <p>
+              <label for="Clubs">Clube favorito</label>
+              <select
+                id="Clubs"
+                v-model="Clubs"
+                name="Clubs">
+                <option>São Paulo</option>
+                <option>Palmeiras</option>
+                <option>Corinthians</option>
+                <option>Santos</option>
+              </select>
+            </p>
+          
+            <p>
+              <input
+                type="submit"
+                value="Enviar">
+            </p>
+          </form>
+        </div>
+    </Div>
+    </body>
+    <script src="js/mainJS.js" ></script>
+</html>

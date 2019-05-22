@@ -1,0 +1,23 @@
+*{margin: 0; padding: 0;} /* inicia todos os elementos com margin 0 e pading 0 */
+
+.form {
+    font-family: 'Verdana'; 
+    color: black;
+    position:absolute;
+    top:70%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-50px;
+}
+
+/*Definir propriedades da imagem principal */
+#logo {
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:15%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-50px;
+}
+
